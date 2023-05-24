@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container bg-info p-5">
+<div class="container bg-primary  p-5">
     <div class="row">
         <div class="col">
-            <h1 >Welcome new movies</h1>
+            <div class="card text-center">
+
+                <h1 >Welcome new movies</h1>
+            </div>
         </div>
     </div>
 </div>
