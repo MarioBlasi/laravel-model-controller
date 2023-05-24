@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>welcome movies</h1>
+<h1 class="">welcome movies</h1>
 
 
 <div class="container">
