@@ -1,12 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container bg-primary  p-5">
+<div class="container-flex bg-primary  p-2">
     <div class="row">
         <div class="col">
             <div class="card text-center">
-
-                <h1 >Welcome new movies</h1>
+                <h1 >Movies</h1>
             </div>
         </div>
     </div>
@@ -14,13 +13,15 @@
 
 
 <div class="container mt-5">
-    <div class="row row-cols-1 row-cols-lg-3">
+    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3">
 
         @forelse ($movies as $movie)
         <div class="col">
-            <div class="card shadow ">
+            <div class="card ">
+                {{-- <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2020/11/IMG_5878-scaled.jpeg" alt=""> --}}
+                <img src="https://m.media-amazon.com/images/M/MV5BN2VhZGI0NjAtOGI5Ni00NDQ1LWEyZWYtZTg3Mzg5YzViOTVmXkEyXkFqcGdeQXVyODc0ODI0ODQ@._V1_.jpg" alt="">
                 <img src="{{ $movie->cover_image }}" alt="{{ $movie->name }}" class="card-img-top">
-                <div class="card-body shadow">
+                <div class="card-body ">
                     <h4>{{ $movie->title }}</h4>
                     <p>Original Title: {{ $movie->original_title }}</p>
                     <p>Nationality: {{ $movie->nationality }}</p>
