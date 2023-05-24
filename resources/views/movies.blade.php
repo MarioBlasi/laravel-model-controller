@@ -1,27 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="">welcome movies</h1>
+<div class="container bg-info p-5">
+    <div class="row">
+        <div class="col">
+            <h1 >Welcome new movies</h1>
+        </div>
+    </div>
+</div>
 
 
-<div class="container">
+<div class="container mt-5">
     <div class="row row-cols-1 row-cols-lg-3">
 
         @forelse ($movies as $movie)
         <div class="col">
-            <div class="card">
+            <div class="card shadow ">
                 <img src="{{ $movie->cover_image }}" alt="{{ $movie->name }}" class="card-img-top">
-                <div class="card-body">
-                    <h4>
-                        {{ $movie->name }}
-                    </h4>
+                <div class="card-body shadow">
+                    <h4>{{ $movie->title }}</h4>
+                    <p>Original Title: {{ $movie->original_title }}</p>
+                    <p>Nationality: {{ $movie->nationality }}</p>
+                    <p>Date: {{ $movie->date }}</p>
+                    <p>Vote: {{ $movie->vote }}</p>
                 </div>
             </div>
         </div>
         @empty
-        <div class="col">
+        {{-- <div class="col">
             <div class="card"> we have no movies</div>
-        </div>
+        </div> --}}
         @endforelse
     </div>
 </div>

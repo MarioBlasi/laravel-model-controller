@@ -14,7 +14,7 @@ class PageController extends Controller
     }
     public function movies()
     {
-        $movies = Movie::all();
+        $movies = Movie::orderByDesc('id')->get();
     //    dd($movies);
         return view('movies', compact('movies'));
 
