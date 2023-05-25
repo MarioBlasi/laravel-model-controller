@@ -5,7 +5,7 @@
     <div class="row ">
         <div class="col">
             <div class="card logo p-5 mb-4 ">
-                <img src="https://fontmeme.com/temporary/10a3cd802eb90b9bc0ee7cc0ad6e83b4.png" alt="" class="bg-dark logo ">
+                <img src="https://logos.flamingtext.com/Name-Logos/Welcome-design-amped-name.png" alt="" class="bg-dark logo ">
             </div>
             <div class="col ">
                 <div class="card ">
