@@ -6,6 +6,7 @@
         <div class="col">
             <div class="card text-center">
                 <h1 >Movies</h1>
+                
             </div>
         </div>
     </div>
@@ -13,7 +14,7 @@
 
 
 <div class="container mt-5">
-    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3">
+    <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 ">
 
         @forelse ($movies as $movie)
         <div class="col">
@@ -23,7 +24,7 @@
                 <img src="{{ $movie->cover_image }}" alt="{{ $movie->name }}" class="card-img-top">
                 <div class="card-body ">
                     <h4>{{ $movie->title }}</h4>
-                    <p>Original Title: {{ $movie->original_title }}</p>
+                    <h5 class="pt-4">Original Title: {{ $movie->original_title }}</h5>
                     <p>Nationality: {{ $movie->nationality }}</p>
                     <p>Date: {{ $movie->date }}</p>
                     <p>Vote: {{ $movie->vote }}</p>
